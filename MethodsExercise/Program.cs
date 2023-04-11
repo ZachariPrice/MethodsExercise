@@ -1,11 +1,15 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 
 namespace MethodsExercise
 {
     public class Program
     {
         static void Main(string[] args)
-        { 
+
+           
+        {
+
             //Name: Lars
             //Favorite Color: Forest Green
             //Favorite Animal: Hippo
@@ -41,6 +45,12 @@ namespace MethodsExercise
             Console.WriteLine($"Favorite color: {color}");
             Console.WriteLine($"Favorite Animal: {animal}");
             Console.WriteLine($"Favorite Band: {band}");
+
+            Console.WriteLine("---------------------------------");
+           int x = Methods.Sum(5, 8);
+            Console.WriteLine(x);
+            Methods.Multiply(10, 3, 8);
+            Console.WriteLine(Methods.Multiply(10, 3, 8));
 
         }
     }
